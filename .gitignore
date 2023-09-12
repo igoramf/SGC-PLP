@@ -1,0 +1,11 @@
+# Arquivos temporários
+*.tmp
+
+# Arquivos de log
+*.log
+
+*.hi
+
+*.o
+
+*.exe
