@@ -1,2 +1,2 @@
 # SGC-PLP
-Projeto da disciplica PLP
+Projeto da disciplina PLP em Haskell
