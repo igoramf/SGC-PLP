@@ -1,4 +1,7 @@
-module Modules.Ingressos.Ingressos where
+module Modules.Ingresso.Ingresso where
+
+import Data.Time.Clock (UTCTime, getCurrentTime)
+
 
 
 data Ingresso = Ingresso { valor :: Float, sala :: String, horario :: String, assento :: String } deriving (Show)
