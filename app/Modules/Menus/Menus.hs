@@ -6,6 +6,7 @@ import System.Exit (exitSuccess)
 import System.FilePath
 import System.IO
 import Modules.Util.ClearScreen (clearScreen)
+import Modules.User.User
 
 menuInicial :: IO ()
 menuInicial = do
@@ -51,6 +52,8 @@ cadastroUsuario = do
   putStrLn "Digite sua senha: "
   password <- getLine
   --createUser name username password "isAdm: false"
+  let user = createUser name username password False
+  print user
   menuInicial
 
 
@@ -69,6 +72,8 @@ cadastroAdmin = do
   putStrLn "Digite sua senha: "
   password <- getLine
   --createUser name username password isAdm: true
+  let user = createAdm name username password True
+  print user
   menuInicial
 
 
