@@ -133,7 +133,7 @@ cadastroFilmesTela = do
    putStrLn ("\nDigite o preço do filme:")
    preco <- lerEntradaDouble
 
-   putStrLn ("\nDigite os salas do filme (separados por ',' e sem caracteres especiais):")
+   putStrLn ("\nDigite as salas do filme (separados por ',' e sem caracteres especiais):")
    salas <- lerEntradaString
    let listaSalas = split salas ','
 
